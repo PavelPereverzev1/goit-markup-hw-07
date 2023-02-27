@@ -1,3 +1,9 @@
+.prettierrc.json
+*.scss
+main.css
+main.css.map
+SASS
+
 # Logs
 logs
 *.log
