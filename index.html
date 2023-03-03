@@ -21,41 +21,100 @@
     <title>Web Studio</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header js-menu-container">
       <div class="container">
-        <nav class="main-nav">
-          <a class="link logo-link" href="./index.html"
-            >Web<span class="second-part-logo">Studio</span>
-          </a>
+        <div class="menu-wraper js-menu-container">
+          <nav class="main-nav js-menu-container">
+            <a class="link logo-link js-menu-container" href="./index.html"
+              >Web<span class="second-part-logo">Studio</span>
+            </a>
 
-          <ul class="menu">
-            <li class="menu-item">
-              <a class="link menu-link current" href="./index.html">Studio</a>
+            <button
+              class="mobile-menu-open-btn js-open-menu js-menu-container"
+              type="button"
+            >
+              <svg
+                class="mobile-menu-open-icon"
+                width="32"
+                height="22"
+                aria-label="mobile menu opener"
+                aria-expaded="false"
+              >
+                <use href="./images/sprite.svg#burger-btn"></use>
+              </svg>
+            </button>
+            <button
+              class="close-mobile-menu-btn js-close-menu js-menu-container"
+              type="button"
+            >
+              <svg class="icon" width="8" height="8">
+                <use href="./images/sprite.svg#close-black"></use>
+              </svg>
+            </button>
+            <ul class="menu js-menu-container">
+              <li class="menu-item">
+                <a class="link menu-link current" href="./index.html">Studio</a>
+              </li>
+
+              <li class="menu-item">
+                <a class="link menu-link" href="./portfolio.html">Portfolio</a>
+              </li>
+
+              <li class="menu-item">
+                <a class="link menu-link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="contacts-list js-menu-container">
+              <li class="contacts-item">
+                <a
+                  class="link contact-link email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a class="link contact-link phone" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="socials js-menu-container">
+            <li class="socials-item">
+              <a class="social-link" href="#">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
 
-            <li class="menu-item">
-              <a class="link menu-link" href="./portfolio.html">Portfolio</a>
+            <li class="socials-item">
+              <a class="social-link" href="#">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
 
-            <li class="menu-item">
-              <a class="link menu-link" href="">Contacts</a>
+            <li class="socials-item">
+              <a class="social-link" href="#">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials-item">
+              <a class="social-link" href="">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-        <address>
-          <ul class="contacts-list">
-            <li class="contacts-item">
-              <a class="link contact-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts-item">
-              <a class="link contact-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        </div>
       </div>
     </header>
     <main>
@@ -134,6 +193,10 @@
           <ul class="dev-types-list">
             <li class="dev-types-list-item">
               <img
+                srcset="
+                  ./images/index-img/monitor.jpg    1x,
+                  ./images/index-img/monitor@2x.jpg 2x
+                "
                 src="./images/index-img/monitor.jpg"
                 alt="desktop monitor"
                 width="360"
@@ -143,6 +206,10 @@
 
             <li class="dev-types-list-item">
               <img
+                srcset="
+                  ./images/index-img/mobile.jpg    1x,
+                  ./images/index-img/mobile@2x.jpg 2x
+                "
                 src="./images/index-img/mobile.jpg"
                 alt="smartphones"
                 width="360"
@@ -152,6 +219,10 @@
 
             <li class="dev-types-list-item">
               <img
+                srcset="
+                  ./images/index-img/adaptive.jpg    1x,
+                  ./images/index-img/adaptive@2x.jpg 2x
+                "
                 src="./images/index-img/adaptive.jpg"
                 alt="smartphone and laptop"
                 width="360"
@@ -168,6 +239,10 @@
           <ul class="team-list">
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/index-img/mark-guerrero.jpg    1x,
+                  ./images/index-img/mark-guerrero@2x.jpg 2x
+                "
                 src="./images/index-img/mark-guerrero.jpg"
                 alt="Mark Guerrero's photo"
                 width="264"
@@ -178,7 +253,7 @@
                 <p class="text">Product Designer</p>
                 <ul class="socials">
                   <li class="socials-item">
-                    <a class="social-link" href="">
+                    <a class="social-link" href="#">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
@@ -186,7 +261,7 @@
                   </li>
 
                   <li class="socials-item">
-                    <a class="social-link" href=""
+                    <a class="social-link" href="#"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
@@ -194,7 +269,7 @@
                   </li>
 
                   <li class="socials-item">
-                    <a class="social-link" href="">
+                    <a class="social-link" href="#">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
@@ -202,7 +277,7 @@
                   </li>
 
                   <li class="socials-item">
-                    <a class="social-link" href="">
+                    <a class="social-link" href="#">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -214,6 +289,10 @@
 
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/index-img/tom-ford.jpg    1x,
+                  ./images/index-img/tom-ford@2x.jpg 2x
+                "
                 src="./images/index-img/tom-ford.jpg"
                 alt="Tom Ford's photo"
                 width="264"
@@ -224,7 +303,7 @@
                 <p class="text">Frontend Developer</p>
                 <ul class="socials">
                   <li class="socials-item">
-                    <a class="social-link" href="">
+                    <a class="social-link" href="#">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
@@ -232,7 +311,7 @@
                   </li>
 
                   <li class="socials-item">
-                    <a class="social-link" href=""
+                    <a class="social-link" href="#"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
@@ -248,7 +327,7 @@
                   </li>
 
                   <li class="socials-item">
-                    <a class="social-link" href="">
+                    <a class="social-link" href="#">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -260,6 +339,10 @@
 
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/index-img/camila-garcia.jpg    1x,
+                  ./images/index-img/camila-garcia@2x.jpg 2x
+                "
                 src="./images/index-img/camila-garcia.jpg"
                 alt="Camila Garcia's photo"
                 width="264"
@@ -270,7 +353,7 @@
                 <p class="text">Marketing</p>
                 <ul class="socials">
                   <li class="socials-item">
-                    <a class="social-link" href="">
+                    <a class="social-link" href="#">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
@@ -278,7 +361,7 @@
                   </li>
 
                   <li class="socials-item">
-                    <a class="social-link" href=""
+                    <a class="social-link" href="#"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
@@ -286,7 +369,7 @@
                   </li>
 
                   <li class="socials-item">
-                    <a class="social-link" href="">
+                    <a class="social-link" href="#">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
@@ -294,7 +377,7 @@
                   </li>
 
                   <li class="socials-item">
-                    <a class="social-link" href="">
+                    <a class="social-link" href="#">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -306,6 +389,10 @@
 
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/index-img/daniel-wilson.jpg    1x,
+                  ./images/index-img/daniel-wilson@2x.jpg 2x
+                "
                 src="./images/index-img/daniel-wilson.jpg"
                 alt="Daniel Wilson's photo"
                 width="264"
@@ -316,7 +403,7 @@
                 <p class="text">UI Designer</p>
                 <ul class="socials">
                   <li class="socials-item">
-                    <a class="social-link" href="">
+                    <a class="social-link" href="#">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#instagram"></use>
                       </svg>
@@ -324,7 +411,7 @@
                   </li>
 
                   <li class="socials-item">
-                    <a class="social-link" href=""
+                    <a class="social-link" href="#"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#twitter"></use>
                       </svg>
@@ -332,7 +419,7 @@
                   </li>
 
                   <li class="socials-item">
-                    <a class="social-link" href="">
+                    <a class="social-link" href="#">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#facebook"></use>
                       </svg>
@@ -340,7 +427,7 @@
                   </li>
 
                   <li class="socials-item">
-                    <a class="social-link" href="">
+                    <a class="social-link" href="#">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/sprite.svg#linkedin"></use>
                       </svg>
@@ -358,7 +445,7 @@
           <h2 class="title">Customers</h2>
           <ul class="customers-list">
             <li class="customers-list-item">
-              <a class="customer-link" href="">
+              <a class="customer-link" href="#">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/sprite.svg#client1"></use>
                 </svg>
@@ -366,7 +453,7 @@
             </li>
 
             <li class="customers-list-item">
-              <a class="customer-link" href="">
+              <a class="customer-link" href="#">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/sprite.svg#client2"></use>
                 </svg>
@@ -374,7 +461,7 @@
             </li>
 
             <li class="customers-list-item">
-              <a class="customer-link" href="">
+              <a class="customer-link" href="#">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/sprite.svg#client3"></use>
                 </svg>
@@ -382,7 +469,7 @@
             </li>
 
             <li class="customers-list-item">
-              <a class="customer-link" href="">
+              <a class="customer-link" href="#">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/sprite.svg#client4"></use>
                 </svg>
@@ -390,7 +477,7 @@
             </li>
 
             <li class="customers-list-item">
-              <a class="customer-link" href="">
+              <a class="customer-link" href="#">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/sprite.svg#client5"></use>
                 </svg>
@@ -398,7 +485,7 @@
             </li>
 
             <li class="customers-list-item">
-              <a class="customer-link" href="">
+              <a class="customer-link" href="#">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/sprite.svg#client6"></use>
                 </svg>
@@ -423,7 +510,7 @@
           <h2 class="footer-title">Social media</h2>
           <ul class="socials">
             <li class="socials-item">
-              <a class="social-link" href="">
+              <a class="social-link" href="#">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
@@ -431,7 +518,7 @@
             </li>
 
             <li class="socials-item">
-              <a class="social-link" href="">
+              <a class="social-link" href="#">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
@@ -439,7 +526,7 @@
             </li>
 
             <li class="socials-item">
-              <a class="social-link" href="">
+              <a class="social-link" href="#">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
@@ -447,7 +534,7 @@
             </li>
 
             <li class="socials-item">
-              <a class="social-link" href="">
+              <a class="social-link" href="#">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/sprite.svg#linkedin"></use>
                 </svg>
@@ -543,12 +630,13 @@
           />
           <label for="user-policy" class="modal-form-chek-desc"
             >I accept the terms and conditions of the&nbsp;
-            <a class="policy-link" href="">Privacy Policy</a></label
+            <a class="policy-link" href="#">Privacy Policy</a></label
           >
           <button class="modal-form-submit" type="submit">Send</button>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
