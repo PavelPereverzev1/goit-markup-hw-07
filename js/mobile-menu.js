@@ -4,9 +4,9 @@
   const closeMenuBtn = document.querySelector('.js-close-menu');
 
   const toggleMenu = () => {
-    // const isMenuOpen =
-    //   openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    // openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    const isMenuOpen =
+      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     document.body.classList.toggle('modal-open');
     mobileMenu.forEach((element, index) => {
       mobileMenu[index].classList.toggle('is-open');
